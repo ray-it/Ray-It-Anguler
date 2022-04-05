@@ -1,0 +1,69 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width:  991.98px) and (max-width: 1199px) {
+    .search-form,.navbar select{ width: 170px;}
+    .btns-icon { width: 125px;}
+    .dataTables_wrapper{
+        overflow-x: scroll;
+    }
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .search-form,.navbar select{ width: 160px;}
+    .btns-icon { width: 120px; display: inline-block; float: right;}
+    .navbar-brand img { width: 105px;}
+    .user-img{ display: none;}
+    .user-list .btn { font-size: .75rem;}
+    .dtr-data{white-space: initial;}
+    .radio_group{padding-right: 0!important;}
+    .w-115 {min-width: 100px;}
+    .bg-laptop{display: none !important;}
+    .categories img {
+        width: 30px;
+        height: 30px;
+    }
+    /* table.dataTable td, table.dataTable th{
+        white-space: initial !important;
+    } */
+    .dataTables_wrapper{
+        overflow-x: scroll;
+    }
+    table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control, table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control{
+        width: 4%;
+    }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+    .navbar-brand img { width: 135px;}
+    .navbar-light .navbar-toggler{ border: none;}
+    .navbar-light .navbar-toggler:focus{ outline: none;}
+    .page-content { padding: 30px 90px 30px 20px;}
+    .py-large,.card-shadow {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    .categories img { width: 30px; height: 30px; }
+    .side-details{ margin-bottom: 15px;}
+    .side-details,.fixed-bar{
+        height: auto !important;
+    }
+    .fixed-bar{ width: auto !important;}
+    .main-grid{ padding: 0 !important;}
+    .fixed-page{overflow: scroll;}
+    .meal-list{ overflow: hidden; height: auto !important;}
+}
+@media (max-width: 480px) {
+    .panel-body{
+        display: block !important;
+        text-align: center;
+    }
+    .panel-body span.d-inline-block{margin-bottom: 1rem;}
+    .dtr-data{white-space: initial;}
+    .form-group.row.w-50{width: 90%!important;}
+    .accordion-toggle{margin-bottom: 1rem;}
+    .custom-control{margin-bottom: .3rem !important;}
+}

@@ -1,0 +1,16 @@
+.page-content{padding:30px 100px 30px 33px}
+input[type=date]::-webkit-calendar-picker-indicator,input[type=time]::-webkit-calendar-picker-indicator{left:-6px;right:auto}
+input[type=date]{text-align:right}
+.sidebar {
+    right: 0;
+    left: auto;
+}
+.group{
+    border-radius: .5em 0 0 .5em;
+    border-right: none;
+    border-left: 1px solid #707070;
+}
+.search-form .form-control,.group .form-control{padding:5px 10px 5px 0;}
+.main-menu,.sub-menu{border-radius:.7rem 0 0 .7rem;}
+select{background-position:left 15px center;}
+input[type=date]::-webkit-calendar-picker-indicator,input[type=time]::-webkit-calendar-picker-indicator{right:auto;left:0}

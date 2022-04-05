@@ -1,0 +1,113 @@
+<main class="h-100 main-login">
+  <div class="main-page" style="height: 100%">
+    <!-- Page content -->
+    <div class="page-content p-0" style="height: 100%">
+      <div class="login row w-100m-0" style="height: 100%">
+        <div class="col-lg-6 d-flex align-items-center p-0">
+          <div class="py-large px-4 text-right w-100">
+            <a href="#" class="text-primary text-decoration-underline"
+              >English<i class="fas fa-globe-africa mx-2"></i
+            ></a>
+            <div class="card-shadow text-center py-4 px-5 mt-2">
+              <h6 class="text-primary mb-4 mt-3">تسجيل الدخول</h6>
+              <form class="app-form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="اسم المستخدم"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="كلمة السر"
+                  />
+                </div>
+                <div class="mb-2">
+                  <select class="form-control">
+                    <option selected disabled>اسم الفرع</option>
+                    <option>2</option>
+                  </select>
+                </div>
+                <div class="mb-2">
+                  <select class="form-control">
+                    <option selected disabled>السنة المالية</option>
+                    <option>2</option>
+                  </select>
+                </div>
+
+                <div class="row btns-group mb-3">
+                  <div class="col-6">
+                    <a
+                      type="button"
+                      class="btn btn-primary btn-block"
+                      [routerLink]="['/pharmacy']"
+                    >
+                      موافق
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-secondary btn-block">
+                      الغاء
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-6 bg-laptop p-0 d-flex align-items-end justify-content-center"
+        >
+          <div class="px-5">
+            <p class="copyright d-flex align-items-center">
+              جميع حقوق الملكية لشركة<span class="text-primary">©</span
+              >RAY-IT<img src="imgs/logo.png" width="100px" alt="logo" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- delete modal confirmation  -->
+<div
+  class="modal fade"
+  id="deleteModal"
+  tabindex="-1"
+  aria-labelledby="deleteModalLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog lg-modal modal-dialog-centered"
+    style="min-width: 35%; width: 35%"
+  >
+    <div class="modal-content">
+      <div class="modal-header form-title border-bottom-0 text-center">
+        <h5 class="modal-title text-primary w-100" id="deleteModalLabel">
+          انتبة
+        </h5>
+      </div>
+      <div class="modal-body text-center pb-0">
+        <p class="bold">هل انت متأكد من الحذف ؟</p>
+      </div>
+      <div class="modal-footer btns-group border-top-0 pt-0 mt-2">
+        <div class="px-3 m-0">
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-check mx-2"></i>تأكيد
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary px-3 mx-2"
+            data-dismiss="modal"
+          >
+            <i class="fas fa-times mx-2"></i>الغاء
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
